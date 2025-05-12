@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+    <style>
+        /* Estilos básicos para mensagem de erro (pode estar no seu styles.css) */
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body id="login-page">
+    <header>
+        <img src="logo esporte e stilo.png" alt="Descrição da Imagem" class="logo">
+        <h1>Site Esporte & Estilo </h1>
+    </header>
+
+    <main>
+        <section id="login">
+        <h2>Área de Login</h2>
+        <form id="loginForm">
+            <div>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <button type="button" onclick="verificarLogin()">Entrar</button>
+            </div>
+            <p id="mensagemErro" class="error-message"></p>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Esporte & Estilo. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function verificarLogin() {
+            const usuarioDigitado = document.getElementById("username").value;
+            const senhaDigitada = document.getElementById("password").value;
+            const mensagemErro = document.getElementById("mensagemErro");
+
+            // Defina aqui o nome de usuário e senha corretos (NÃO FAÇA ISSO EM UM SITE REAL!)
+            const usuarioCorreto = "admin";
+            const senhaCorreta = "123456";
+
+            if (usuarioDigitado === usuarioCorreto && senhaDigitada === senhaCorreta) {
+                // Redireciona para a página de dashboard em caso de sucesso
+                window.location.href = "dashboard.html";
+            } else {
+                mensagemErro.textContent = "Nome de usuário ou senha incorretos.";
+            }
+        }
+    </script>
+</body>
+</html>

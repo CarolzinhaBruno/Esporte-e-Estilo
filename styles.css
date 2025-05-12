@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Estilo para a página de login */
+#login-page {
+    font-family: Arial, sans-serif;
+    background-image: url('https://originalfit.net/wp-content/uploads/2019/02/esporte-2.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Estilo para o dashboard */
+#dashboard-page {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fundo sólido */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#dashboard-page header {
+    background: #020202; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 5px 0; /* Reduz a altura da barra */
+    text-align: center; /* Centraliza o texto */
+}
+
+#dashboard-page header h1 {
+    font-size: 1.5em; /* Ajusta o tamanho do texto */
+    margin: 0; /* Remove margens extras */
+}
+/* Estilo para as abas de navegação no dashboard */
+#dashboard-tabs {
+    display: flex;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    align-items: center; /* Alinha os botões verticalmente */
+    padding: 10px 20px; /* Espaçamento interno */
+    background: #f5f5f5; /* Fundo claro para destacar os botões */
+    border-bottom: 1px solid #ddd; /* Linha separadora abaixo */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+#dashboard-tabs button {
+    background: #6e0d0d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px; /* Espaçamento entre os botões */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#dashboard-tabs button:hover {
+    background: #4cae4c;
+}
+
+/* Ajuste do espaçamento entre o cabeçalho e os botões */
+#dashboard-page header {
+    margin-bottom: 10px; /* Espaçamento entre o cabeçalho e os botões */
+}
+
+/* Estilos Globais e Específicos continuam aqui */
+header {
+    background: #020202;
+    color: #fff;
+    padding: 10px 0 10px 0;
+    position: relative;
+}
+header h1 {
+    margin-top: 60px; /* Ajuste conforme necessário para dar espaço acima do título */
+    text-align: center; /* Centraliza o texto do título */
+    t-family: 'Roboto', sans-serif;
+    font-size: 2em; /* Ajusta o tamanho da fonte */
+    color: #fff; /* Altera a cor do texto, se necessário */
+}
+
+.logo {
+    position: absolute; /* Permite que a imagem seja posicionada em relação ao seu contêiner */
+    top: 10px; /* Distância do topo */
+    left: 10px; /* Distância da esquerda */
+    width: 160px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#login {
+    background: linear-gradient(to bottom, #f5f3f3, #000000);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #6e0d0d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #000000e7; /* Define a cor do texto */
+}
+/* Estilos Específicos para o Dashboard */
+#dashboard-page {
+    padding: 20px;
+    background-color: #f5f5f5; /* Fundo claro para o conteúdo */
+}
+
+#welcome {
+    background: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center;
+    margin: 20px auto;
+    width: 80%; /* Largura da seção */
+}
+
+#welcome h2 {
+    color: #333; /* Cor do título */
+    font-size: 1.8em; /* Tamanho do título */
+}
+
+#welcome p {
+    color: #555; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho do texto */
+}
+
+#dados {
+    background: #eaeaea; /* Fundo cinza claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+#dados h3 {
+    color: #444; /* Cor do título */
+    font-size: 1.5em;
+}
+
+#dados p {
+    color: #666; /* Cor do texto */
+    font-size: 1em;
+}
+/* Estilo para as abas de navegação */
+#dashboard-tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+#dashboard-tabs button {
+    background: #6e0d0d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#dashboard-tabs button:hover {
+    background: #4cae4c;
+}
+
+/* Estilo para as seções do dashboard */
+.dashboard-section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* Estilo para a tabela de relatório */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background: #6e0d0d;
+    color: white;
+}
+#cadastro {
+    background: #ffffff;
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 50%; /* Largura do bloco */
+    text-align: center;
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+#cadastro label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Alinha o texto do label à esquerda */
+}
+
+#cadastro input {
+    width: 100%; /* Garante que o campo ocupe toda a largura do bloco */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    margin-bottom: 10px; /* Espaçamento entre os campos */
+}
